@@ -1,0 +1,8 @@
+line_length: 300
+
+disabled_rules:
+ - type_name
+ - weak_delegate
+
+excluded:
+ - Pods
