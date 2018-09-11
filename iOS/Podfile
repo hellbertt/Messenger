@@ -1,0 +1,20 @@
+platform :ios, '11.0'
+
+target 'iOS' do
+  use_frameworks!
+
+  pod 'Cartography'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+  pod 'RxKeyboard'
+  pod 'RxSwift'
+  pod 'SwiftGen'
+  pod 'SwiftLint'
+  pod 'Suas'
+
+  target 'iOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
