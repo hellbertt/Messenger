@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		754A66D4F9198173A91C4754 /* Pods_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CB11A4F054E62439F2A20C /* Pods_iOS.framework */; };
+		760FA56E214836CE00BC3076 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760FA56D214836CE00BC3076 /* Assets.swift */; };
+		760FA570214836DA00BC3076 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760FA56F214836DA00BC3076 /* L10n.swift */; };
 		76C6D8D721482D5E00B50D30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6D8D621482D5E00B50D30 /* AppDelegate.swift */; };
 		76C6D8D921482D5E00B50D30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C6D8D821482D5E00B50D30 /* ViewController.swift */; };
 		76C6D8DC21482D5E00B50D30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76C6D8DA21482D5E00B50D30 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* Begin PBXFileReference section */
 		69CB11A4F054E62439F2A20C /* Pods_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69F82A542F9EA0ACB40A4717 /* Pods-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS/Pods-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		760FA56D214836CE00BC3076 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		760FA56F214836DA00BC3076 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		76C6D8D321482D5E00B50D30 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C6D8D621482D5E00B50D30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76C6D8D821482D5E00B50D30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,14 +70,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		760FA5692148369800BC3076 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				760FA56C214836C100BC3076 /* Assets */,
+				760FA56B214836B700BC3076 /* Strings */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		760FA56A214836A700BC3076 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				76C6D8D621482D5E00B50D30 /* AppDelegate.swift */,
+				76C6D8DD21482D5F00B50D30 /* Assets.xcassets */,
+				76C6D8E221482D5F00B50D30 /* Info.plist */,
+				76C6D8DF21482D5F00B50D30 /* LaunchScreen.storyboard */,
+				76C6D8DA21482D5E00B50D30 /* Main.storyboard */,
+			);
+			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		760FA56B214836B700BC3076 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				760FA56F214836DA00BC3076 /* L10n.swift */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		760FA56C214836C100BC3076 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				760FA56D214836CE00BC3076 /* Assets.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		760FA571214836E100BC3076 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76C6D8D821482D5E00B50D30 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		76C6D8CA21482D5E00B50D30 = {
 			isa = PBXGroup;
 			children = (
+				FB941B706EAA008E5DD23BA6 /* Frameworks */,
+				E72EFDE9E80E5E051E2FA1A0 /* Pods */,
+				76C6D8D421482D5E00B50D30 /* Products */,
 				76C6D8D521482D5E00B50D30 /* iOS */,
 				76C6D8EA21482D5F00B50D30 /* iOSTests */,
-				76C6D8D421482D5E00B50D30 /* Products */,
-				E72EFDE9E80E5E051E2FA1A0 /* Pods */,
-				FB941B706EAA008E5DD23BA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,12 +139,9 @@
 		76C6D8D521482D5E00B50D30 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				76C6D8D621482D5E00B50D30 /* AppDelegate.swift */,
-				76C6D8D821482D5E00B50D30 /* ViewController.swift */,
-				76C6D8DA21482D5E00B50D30 /* Main.storyboard */,
-				76C6D8DD21482D5F00B50D30 /* Assets.xcassets */,
-				76C6D8DF21482D5F00B50D30 /* LaunchScreen.storyboard */,
-				76C6D8E221482D5F00B50D30 /* Info.plist */,
+				760FA5692148369800BC3076 /* Model */,
+				760FA56A214836A700BC3076 /* Supporting Files */,
+				760FA571214836E100BC3076 /* View */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -102,8 +149,8 @@
 		76C6D8EA21482D5F00B50D30 /* iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				76C6D8EB21482D5F00B50D30 /* iOSTests.swift */,
 				76C6D8ED21482D5F00B50D30 /* Info.plist */,
+				76C6D8EB21482D5F00B50D30 /* iOSTests.swift */,
 			);
 			path = iOSTests;
 			sourceTree = "<group>";
@@ -301,8 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				760FA570214836DA00BC3076 /* L10n.swift in Sources */,
 				76C6D8D921482D5E00B50D30 /* ViewController.swift in Sources */,
 				76C6D8D721482D5E00B50D30 /* AppDelegate.swift in Sources */,
+				760FA56E214836CE00BC3076 /* Assets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +380,7 @@
 				76C6D8DB21482D5E00B50D30 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		76C6D8DF21482D5F00B50D30 /* LaunchScreen.storyboard */ = {
@@ -339,6 +389,7 @@
 				76C6D8E021482D5F00B50D30 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -465,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACHZ35BCQP;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_FILE = "iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ACHZ35BCQP;
-				INFOPLIST_FILE = iOS/Info.plist;
+				INFOPLIST_FILE = "iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
